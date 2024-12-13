@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="main-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
+    <script>
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+            }
+        };
+    </script>
+</head>
+<body>
+    <button id="theme-toggle" class="circle-nav-button"><div class="image-light-dark-toggle"></div></button>
+    <nav class="navbar">
+        <ul>
+            <li><a href="about-me.html">About Me</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="https://github.com/haskucy" target="_blank">GitHub</a></li>
+            <li><a href="https://www.youtube.com/@haskucy" target="_blank">YouTube</a></li>
+            <li id="nav-fixer"></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Hi there, this is Haskucy</h1>
+    </header>
+
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Welcome to my personal website! My name is [Your Name], and I am a [Your Profession/Role, e.g., software developer, writer, or designer] passionate about [mention key interests, e.g., creating innovative solutions, sharing knowledge, or designing user-centric experiences]. This website serves as a hub to showcase my projects, share my thoughts through articles, and connect with like-minded individuals. I hope you find something here that inspires or intrigues you!</p>
+    </section>
+
+    <section id="projects">
+        <h2>Highlighted Projects</h2>
+        <ul>
+            <li>
+                Project A
+            </li>
+        </ul>
+    </section>
+
+    <section id="articles">
+        <h2>Highlighted Articles</h2>
+        <ul>
+            <li>
+                Project A
+            </li>
+        </ul>
+    </section>
+
+<!--
+    <section id="section-id">
+        <h2>Section Title</h2>
+        <p>Paragraph text with <i>italic</i> and <b>bold</b> styles. Math example: $\varphi = \frac{1 + \sqrt{5}}{2}$.</p>
+        <p>I do not wish to pretend expertise in any of these fields, but rather to suspend my ignorance and try to find some connections between them in the meantime. I am writing this as an exploration, and I welcome and expect corrections on my explanations and speculations. However, I also welcome those who shy away from a paper as soon as mathematics makes its first appearance–my job is just to share my excitement about math and its connection with living things. I will begin by explaining fairly simple concepts, partially to keep the larger subject from slipping out from beneath me, but also to establish a method of building an understanding of the more complicated topics. Some of these topics are modeled after nature, elegant explanations of natural phenomena. Others are abstract: the math was put first and allowed to think freely.</p>
+        
+        <div class="image-container">
+            <img src="image-path.jpg" alt="Image Description">
+        </div>
+        <figcaption>Caption for the image.</figcaption>
+    </section>
+-->
+
+
+    <footer>
+        <p>&copy; <span id="footer-year"></span> Haskucy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const toggleButton = document.getElementById('theme-toggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+
+        document.getElementById("footer-year").innerHTML = new Date().getFullYear();
+
+    </script>
+</body>
+</html>
