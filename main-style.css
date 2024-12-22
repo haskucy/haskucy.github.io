@@ -70,6 +70,9 @@ button .image-light-dark-toggle {
 
 }
 
+@media (prefers-color-scheme: light) {
+    }
+
 @media only screen and (max-width: 950px) {
     
     .circle-nav-button {
