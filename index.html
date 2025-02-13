@@ -8,16 +8,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
+
+    <link rel="preload" href="main-style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" as="style">
+
     <link rel="stylesheet" href="main-style.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
-    <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
-            }
-        };
-    </script>
+
+
+
 </head>
 <body>
     <button id="theme-toggle" class="circle-nav-button"><div class="image-light-dark-toggle"></div></button>
@@ -98,7 +97,7 @@
         <p>&copy; <span id="footer-year"></span> Haskucy. All rights reserved.</p>
     </footer>
 
-    <script>
+    <script async defer>
         const toggleButton = document.getElementById('theme-toggle');
         toggleButton.addEventListener('click', () => {
             document.body.classList.toggle('dark-mode');
@@ -107,5 +106,13 @@
         document.getElementById("footer-year").innerHTML = new Date().getFullYear();
 
     </script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async defer></script>
+        <script>
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']]
+                }
+            };
+        </script>
 </body>
 </html>
